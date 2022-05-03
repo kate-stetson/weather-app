@@ -1,13 +1,13 @@
 h1 {
   text-align: center;
-  color: #91bed7;
+  color: #212d5b;
   font-family: "Comfortaa", cursive;
   font-size: 55px;
 }
 h2,
 h3 {
   text-align: center;
-  color: #91bed7;
+  color: #212d5b;
   font-family: "Comfortaa", cursive;
 }
 .col {
@@ -26,7 +26,7 @@ h3 {
   color: #0b1c21;
 }
 .container {
-  background-image: url("../images/clouds.jpg");
+  background-image: url("../images/MINIMAL\ MOUNTAINS.png");
   background-size: cover;
   border-radius: 30px;
   padding: 60px 20px;
