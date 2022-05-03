@@ -10,6 +10,11 @@ h3 {
   color: #91bed7;
   font-family: "Comfortaa", cursive;
 }
+.col {
+  text-align: center;
+  font-family: "Josefin Slab", serif;
+  color: #f7ddee;
+}
 .todays-weather {
   font-family: "Josefin Slab", serif;
   line-height: 30px;
@@ -18,10 +23,10 @@ h3 {
   font-size: 60px;
   padding-top: 130px;
   text-align: center;
-  color: white;
+  color: #0b1c21;
 }
 .container {
-  background-image: url("../images/mountains.webp");
+  background-image: url("../images/clouds.jpg");
   background-size: cover;
   border-radius: 30px;
   padding: 60px 20px;
@@ -45,11 +50,7 @@ h3 {
   font-size: 20px;
   font-family: "Josefin Slab", serif;
 }
-.col {
-  text-align: center;
-  font-family: "Josefin Slab", serif;
-  color: white;
-}
+
 .currentTemp,
 .units {
   font-weight: 900;
