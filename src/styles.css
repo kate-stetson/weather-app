@@ -33,6 +33,7 @@ h3 {
   padding: 30px 20px;
   width: 800px;
   height: 670px;
+  border: 7px solid #cdc1e7;
 }
 .city-search {
   text-align: center;
