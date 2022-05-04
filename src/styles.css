@@ -21,27 +21,26 @@ h3 {
   font-family: "Josefin Slab", serif;
   line-height: 30px;
   position: relative;
-  right: 20px;
-  font-size: 60px;
+  right: -50px;
   padding-top: 130px;
-  text-align: center;
+  text-align: left;
   color: #0b1c21;
 }
 .container {
-  background-image: url("../images/MINIMAL\ MOUNTAINS.png");
+  background-image: url("../images/MINIMAL\ MOUNTAINS\ 2.jpg");
   background-size: cover;
   border-radius: 30px;
-  padding: 60px 20px;
-  width: 1000px;
+  padding: 30px 20px;
+  width: 800px;
+  height: 670px;
 }
-
 .city-search {
   text-align: center;
 }
 .todays-icon {
   position: relative;
-  left: 20px;
-  padding: 30px 0;
+  left: 40px;
+  padding: 5px 0;
 }
 .humidity-and-wind,
 #humidity,
@@ -51,11 +50,17 @@ h3 {
 #description {
   font-size: 20px;
   font-family: "Josefin Slab", serif;
+  font-weight: 900;
 }
 
-.currentTemp,
+.currentTemp {
+  font-weight: 900;
+  font-size: 80px;
+}
+
 .units {
   font-weight: 900;
+  font-size: 30px;
 }
 .footer {
   text-align: center;
