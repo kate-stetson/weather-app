@@ -5,20 +5,26 @@ h1 {
   font-size: 55px;
   font-weight: bold;
 }
+h2 {
+  text-align: center;
+  color: #212d5b;
+  font-family: "Comfortaa", cursive;
+  margin-top: -17px;
+}
 
-h2,
 h3 {
   text-align: center;
   color: #212d5b;
   font-family: "Comfortaa", cursive;
+  margin-bottom: 20px;
 }
 .container {
   background-image: url("../images/MINIMAL\ MOUNTAINS\ 2.jpg");
   background-size: cover;
   border-radius: 30px;
   padding: 30px 20px;
-  width: 800px;
-  height: 680px;
+  width: 525px;
+  height: 630px;
   border: 7px solid #cdc1e7;
   margin: 15px auto;
 }
@@ -33,21 +39,21 @@ h3 {
 }
 .todays-weather {
   font-family: "Josefin Slab", serif;
+  padding-top: 80px;
+  padding-bottom: 50px;
   line-height: 20px;
   position: relative;
-  padding-top: 130px;
   text-align: left;
   color: #0b1c21;
-  left: 60px;
-}
-.city-search {
-  text-align: center;
+  right: 50px;
 }
 .todays-icon {
   position: relative;
-  padding: 5px 0;
-  right: -21px;
-  text-align: right;
+  padding-top: 26px;
+  left: 40px;
+}
+.city-search {
+  text-align: center;
 }
 .humidity-and-wind,
 #humidity,
