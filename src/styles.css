@@ -79,3 +79,11 @@ h3 {
   text-align: center;
   margin: -12px auto;
 }
+.todays-weather .active {
+  text-decoration: none;
+  color: black;
+  cursor: default;
+}
+.todays-weather .active:hover {
+  text-decoration: none;
+}

@@ -69,6 +69,8 @@ function showTemperature(response) {
   document
     .querySelector("#icon")
     .setAttribute("alt", response.data.weather[0].description);
+
+  fahrenheitTemperature = response.data.main.temp;
 }
 
 function displaySearch(city) {
@@ -103,6 +105,37 @@ form.addEventListener("submit", handleSubmit);
 
 let currentButton = document.querySelector("#current-location");
 currentButton.addEventListener("click", retrieveCurrentLocation);
+
+// Celsius Link
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+  let celsiusTemperature = ((fahrenheitTemperature - 32) * 5) / 9;
+  // remove the active class from the fahrenheit link
+  fahrenheitLink.classList.remove("active");
+  celsiusLink.classList.add("active");
+  let currentTemp = document.querySelector("#currentTemp");
+  currentTemp.innerHTML = Math.round(celsiusTemperature);
+}
+
+// Fahrenheit Link
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  // remove the active class from the celsius link
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let currentTemp = document.querySelector("#currentTemp");
+  currentTemp.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+let fahrenheitTemperature = null;
+
+let celsiusTemperature = null;
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 getWeekdayTime();
 getMonthDayYear();
