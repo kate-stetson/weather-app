@@ -46,6 +46,35 @@ function getMonthDayYear() {
   h3.innerHTML = `${currentMonth} ${currentDate}, ${currentYear}`;
 }
 
+// Forecast Results
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+    <div class="col-2">
+      <div class="weather-forecast-date">${day}</div>
+      <img
+         src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+         alt=""
+         width="40"
+      />
+      <div class="forecast-temperatures">
+        <span class="forecast-temp-max">18°</span>
+       <span class="forecast-temp-min">12°</span>
+    </div>
+   </div>
+   `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 // Searched Location Results
 function showTemperature(response) {
   document.querySelector("h1").innerHTML = response.data.name;
@@ -140,3 +169,5 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 getWeekdayTime();
 getMonthDayYear();
 displaySearch("Atlanta");
+
+displayForecast();

@@ -28,15 +28,6 @@ h3 {
   border: 7px solid #cdc1e7;
   margin: 15px auto;
 }
-.col-sun,
-.col-mon,
-.col-tues,
-.col-wed,
-.col-thurs {
-  text-align: center;
-  font-family: "Josefin Slab", serif;
-  color: #f7ddee;
-}
 .todays-weather {
   font-family: "Josefin Slab", serif;
   padding-top: 80px;
@@ -86,4 +77,16 @@ h3 {
 }
 .todays-weather .active:hover {
   text-decoration: none;
+}
+.weather-forecast {
+  text-align: center;
+  color: #f7ddee;
+  font-family: "Josefin Slab", serif;
+  font-weight: 900;
+}
+.weather-forecast-date {
+  font-size: 18px;
+}
+.forecast-temp-min {
+  font-weight: 400;
 }

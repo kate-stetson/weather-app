@@ -20,10 +20,9 @@
     <script
       src="https://kit.fontawesome.com/a473f9596d.js"
       crossorigin="anonymous"
-    >
-  </script>
-      <link rel="stylesheet" href="src/styles.css" />
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    ></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -46,14 +45,18 @@
         </div>
         <div class="col todays-weather">
           <p>
-            <span class="currentTemp"
-            id="currentTemp">50</span>
-            <span class="units"><a href="#" id="fahrenheit-link" class="active">°F</a> | <a href="#" id="celsius-link">°C</a>
+            <span class="currentTemp" id="currentTemp">50</span>
+            <span class="units"
+              ><a href="#" id="fahrenheit-link" class="active">°F</a> |
+              <a href="#" id="celsius-link">°C</a>
             </span>
-              <br />
-              <span class="description" id="description">Partly Cloudy</span><br />
-            <span class="humidity-and-wind">Humidity:</span> <span id="humidity"> 49 </span><span id="percent"> %</span>
-            <br /> <span class="humidity-and-wind">Wind:</span> <span id="wind"> 5</span><span id="kmh"> km/h</span>
+            <br />
+            <span class="description" id="description">Partly Cloudy</span
+            ><br />
+            <span class="humidity-and-wind">Humidity:</span>
+            <span id="humidity"> 49 </span><span id="percent"> %</span> <br />
+            <span class="humidity-and-wind">Wind:</span>
+            <span id="wind"> 5</span><span id="kmh"> km/h</span>
             <br />
           </p>
         </div>
@@ -61,33 +64,22 @@
       <h2><strong>saturday</strong></h2>
       <h3>march 5, 2022</h3>
       <br />
-
-      <div class="row">
-        <div class="col col-sun">Sun</div>
-        <div class="col col-mon">Mon</div>
-        <div class="col col-tues">Tues</div>
-        <div class="col col-wed">Wed</div>
-        <div class="col col-thurs">Thurs</div>
-      </div>
-      <div class="row">
-        <div class="col col-sun"><i class="fa-solid fa-cloud-sun"></i></div>
-        <div class="col col-mon"><i class="fa-solid fa-cloud-sun-rain"></i></div>
-        <div class="col col-tues"><i class="fa-solid fa-cloud-sun-rain"></i></div>
-        <div class="col col-wed"><i class="fa-solid fa-cloud-showers-heavy"></i></div>
-        <div class="col col-thurs"><i class="fa-solid fa-cloud-showers-heavy"></i></div>
-      </div>
-      <div class="row">
-        <div class="col col-sun"><strong>80°F/</strong> 59°F</div>
-        <div class="col col-mon"><strong>76°F/</strong> 49°F</div>
-        <div class="col col-tues"><strong>62°F/</strong> 51°F</div>
-        <div class="col col-wed"><strong>64°F/</strong> 51°F</div>
-        <div class="col col-thurs"><strong>66°F/</strong> 51°F</div>
-      </div>
+      <div class="weather-forecast" id="forecast">
 
       </div>
     </div>
-    <p class="footer"> <a href="https://github.com/kate-stetson/weather-app" target="_blank">Open-source code</a> by 
-      <a href="https://www.linkedin.com/in/kate-stetson-86a1ab56/" target="_blank"> Kate Stetson</a></p>
+    <p class="footer">
+      <a href="https://github.com/kate-stetson/weather-app" target="_blank"
+        >Open-source code</a
+      >
+      by
+      <a
+        href="https://www.linkedin.com/in/kate-stetson-86a1ab56/"
+        target="_blank"
+      >
+        Kate Stetson</a
+      >
+    </p>
     <script src="src/index.js"></script>
   </body>
 </html>
