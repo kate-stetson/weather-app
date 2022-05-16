@@ -47,7 +47,8 @@ function getMonthDayYear() {
 }
 
 // Forecast Results
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
@@ -75,6 +76,14 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHTML;
 }
 
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "880159dc4a3e968e542dca97965934f7";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
+  console.log(apiUrl);
+  axios.get(apiUrl).then(displayForecast);
+}
+
 // Searched Location Results
 function showTemperature(response) {
   document.querySelector("h1").innerHTML = response.data.name;
@@ -100,6 +109,8 @@ function showTemperature(response) {
     .setAttribute("alt", response.data.weather[0].description);
 
   fahrenheitTemperature = response.data.main.temp;
+
+  getForecast(response.data.coord);
 }
 
 function displaySearch(city) {
@@ -169,5 +180,3 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 getWeekdayTime();
 getMonthDayYear();
 displaySearch("Atlanta");
-
-displayForecast();
